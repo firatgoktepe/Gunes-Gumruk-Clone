@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Font Awesome CSS-->
+    <link rel="stylesheet" href="./css/fontawesome.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Güneş Gümrük</title>
+</head>
+
+<body>
+
+       <!--  HEADER -->
+       <header>
+
+        <!--   TOP HEADER -->
+        <div class="top-header">
+            <div class="container">
+                <div class="logo">
+                    <img src="./img/logo.png" alt="Güneş Gümrük">
+                </div>
+                <ul class="top-social-menu">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fas fa-envelope-square"></i></a></li>
+                    <li><a href="#"><i class="fas fa-phone-square"></i></a></li>
+                </ul>
+                <div class="navbar-toggler">
+                    <div class="line line1"></div>
+                    <div class="line line2"></div>
+                    <div class="line line3"></div>
+                </div>
+            </div>
+        </div>
+
+        <!--   NAV HEADER -->
+        <div class="container">
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                    <li><a href="#">Hizmetlerimiz</a>
+                        <i class="fas fa-chevron-down"></i>
+                        <ul class="dropdown">
+                            <li><a href="gumrukleme-hizmetleri.html">Gümrükleme Hizmetleri</a></li>
+                            <li><a href="ithalat-islemleri.html">İthalat İşlemleri</a></li>
+                            <li><a href="ihracat-islemleri.html">İhracat İşlemleri</a></li>
+                            <li><a href="danismanlik-hizmetleri.html">Danışmanlık Hizmetleri</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                    <li><a href="#">Müşteri Girişi</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--Contact Us-->
+    <section>
+        <div class="top-image">
+            <img src="./img/top-image.jpg" alt="top-image">
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="contact-content">
+                <h1>İletişim</h1>
+                <div class="contact-item">
+                        <p>
+                            <b>Adres:</b>Atatürk Mah. Ataşehir Bulvarı No:20
+                            Gardenya Plaza3 Kat:14<br>Ataşehir-İstanbul<br>
+                            <b>Tel:</b> 0216 - 576 74 26 (pbx)<br>
+                            <b>Faks:</b> 0216 - 576 06 55<br>
+                            <b>E-posta:</b> info@gunesgumruk.com.tr<br>
+                        </p>
+                        <img src="./img/maps.jpg" alt="maps">
+                        <form action="" onsubmit="return(validate());" name="valForm">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Ad-Soyad">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Mail Adresiniz">
+                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Konu">
+                            <textarea class="form-control" id="message" name="message" rows="7" placeholder="Mesajınız"></textarea>
+                            <button type="submit" id="submit" class="btn-general btn-light">Gönder</button>
+                        </form>
+                </div>  
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-list">
+                <ul>
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                    <li><a href="gumrukleme-hizmetleri.html">Hizmetlerimiz</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>&copy; Güneş Gümrük</p>
+            </div>
+            <div class="back-top">
+                <a href="#"><i class="fas fa-chevron-up"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- CUSTOM JS -->
+    <script src="./js/main.js"></script>
+
+
+</body>
+
+</html>
