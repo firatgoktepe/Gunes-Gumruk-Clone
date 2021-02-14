@@ -110,8 +110,8 @@ h1, h2, h3 {
     padding: 1rem;
     line-height: 3rem;
     transition: var(--general-transition);
-    position: relative;
-    z-index: 100;
+    /* position: relative; */
+    /* z-index: 100;  */
 }
 
 .navbar-list li:hover{
@@ -126,18 +126,33 @@ h1, h2, h3 {
     color: var(--primary-color);             
   }
 
+  /* DISPLAY NONE EKLEDIM */
 .navbar-list li .dropdown {
-    position: absolute;
+    /* position: absolute; */
     background-color: var(--light-color);
-    width: 150%;
+    width: 30%; /* GENISLIGI BIRAZ KUCULTTUM */
     left: 50%;
     transition: var(--general-transition);
-    opacity: 0;
+    /* opacity: 0; */
+    display: none;
+    position: absolute;
+    
 }
 
-.navbar-list .dropdown li {
-    line-height: 3rem;
+/* HOVER DAN SONRA GORUNUR OLMASI ICIN */
+.navbar-list li:nth-child(3):hover .dropdown {
+    display: block;
 }
+
+.navbar-list .dropdown  {
+    line-height: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
 
 .navbar-list i {
     color: var(--primary-color);
@@ -145,10 +160,7 @@ h1, h2, h3 {
     padding-left: .5rem;
 }
 
-.navbar-list .dropdown:hover {
-    opacity: 1;
-    top: 5.1rem;
-}
+
 
 /** Main Slider **/
 
@@ -533,7 +545,7 @@ h1, h2, h3 {
     font-size: 2.2rem;
     position: absolute;
     right: 2.5rem;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     z-index: 101;
     display: none;
 }
@@ -547,7 +559,7 @@ h1, h2, h3 {
 }
 
 .nav-active {
-    transform: translateX(0%);
+    transform: translateX(100%); /* 0% di degistirdim */
 }
 
 .toggle .line1 {
@@ -570,7 +582,8 @@ h1, h2, h3 {
         cursor: pointer;
     }
     .navbar-list {
-        display: block;
+
+        /* display: block;
         position: absolute;
         top: 8rem;
         left: 0;
@@ -579,13 +592,35 @@ h1, h2, h3 {
         height: 50vh;
         opacity: .9;
         transition: var(--general-transition);
-        transform: translateX(-100%);
+        transform: translateX(-100%); */
+
+        display: none; /* Ekledim */
     }
-    .top-header .container {
+        /* Ekledim */
+    .navbar-list li .dropdown {
+        width: 100%;
+        left: 20%
+
+    }
+
+    .nav-active {
+        display: block;
+        top: 8rem;
+        left: 0;
+        background-color: #F8F9F9;
+        width: 100%;
+        height: 50vh;
+        opacity: .9;
+        transition: var(--general-transition);
+        transform: translateX(0%); /* 100% du degistirdim*/
+    }
+
+    .top-header {
         display: grid;
         align-items: center;
         grid-template-columns: 1fr 1fr 1fr;
-    }   
+    } 
+   
     .slider {
     height: 30.7rem;
     }
@@ -646,7 +681,7 @@ h1, h2, h3 {
 
 @media only screen and (max-width: 768px) {
     .navbar-toggler {
-        margin-top: 1.3rem;
+        margin-top: 0;
     }
     .slider {
         height: 22.7rem;
