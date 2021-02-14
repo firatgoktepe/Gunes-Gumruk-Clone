@@ -156,7 +156,21 @@
             </div>
     </footer>
 
+<!---Slider -->
+<script>
 
+    /** Main Slider i sadece index.html' de calissin diye buraya koydum. cunku diger sayfalarda slider yok ve o sayfalarda hataya neden oluyordu **/
+
+    var counter = 1;
+    setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 4){
+            counter = 1;
+        }
+    }, 3000);
+
+</script>
 
     <!-- CUSTOM JS -->
     <script src="./js/main.js"></script>
